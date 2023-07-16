@@ -4,10 +4,8 @@ import {useState, useEffect} from 'react';
 import Header from './src/components/Header/Header';
 import Timer from './src/components/Timer/Timer';
 import { Audio } from 'expo-av';
-import { SvgXml } from 'react-native-svg';
-import githubIcon from './assets/github.svg';
 
-const colors = ["#F7DC6F","#A2D9CE", "#D7BDE2"];
+const colors = ["#FFA41B","#7895CB", "#D7BDE2"];
 
 export default function App() {
   const [isWorking, setIsWorking] = useState(false);
@@ -62,8 +60,7 @@ export default function App() {
           <Text style={{color: "white", fontWeight: "bold"}}>{active ? "STOP" : "START"}</Text>
         </TouchableOpacity>
         <View style={styles.footer}>
-          <SvgXml xml={githubIcon} width={15} height={15}/>
-          <Text style={styles.TextFooter}>copyright - Leonel Gomez</Text>
+          <Text style={styles.TextFooter}>Made with React Native - Leonel Gomez</Text>
         </View>
         <StatusBar style="auto" />
       </View>
